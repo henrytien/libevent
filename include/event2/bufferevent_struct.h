@@ -67,6 +67,8 @@ struct event_watermark {
   should really not rely on the layout, size, or contents of this structure:
   it is fairly volatile, and WILL change in future versions of the code.
 **/
+
+/*Henry bufferevent */
 struct bufferevent {
 	/** Event base for which this bufferevent was created. */
 	struct event_base *ev_base;
