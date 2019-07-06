@@ -45,7 +45,7 @@ extern "C" {
  */
 EVENT2_EXPORT_SYMBOL
 void *event_mm_malloc_(size_t sz);
-
+/* I like malloc memory here, and you? */
 /** Allocate memory initialized to zero.
  *
  * @return On success, return a pointer to (count * size) newly allocated
@@ -54,6 +54,7 @@ void *event_mm_malloc_(size_t sz);
  *     set errno to ENOMEM and return NULL.
  *     If either arguments are 0, simply return NULL.
  */
+/* Here wrap by calloc! */
 EVENT2_EXPORT_SYMBOL
 void *event_mm_calloc_(size_t count, size_t size);
 

@@ -35,7 +35,9 @@
 #include "event2/util.h"
 #include "util-internal.h"
 #include "mm-internal.h"
-
+/*Henry, here have a lot funny, min_heap, this is my first time see you, how are
+* you ?
+*/
 typedef struct min_heap
 {
 	struct event** p;

@@ -38,7 +38,7 @@
 
 /** Compare two doubles for equality without the compiler warning. This is
  * probably the wrong thing to do, but this is just sample code :) */
-static inline int
+static  int
 eq(double a, double b)
 {
 #pragma GCC diagnostic push

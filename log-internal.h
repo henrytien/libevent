@@ -54,6 +54,7 @@ EVENT2_CORE_EXPORT_SYMBOL extern ev_uint32_t event_debug_logging_mask_;
 #define event_debug_get_logging_mask_() (0)
 #endif
 
+/* Here have a lot of variadic function use va_list */
 EVENT2_EXPORT_SYMBOL
 void event_err(int eval, const char *fmt, ...) EV_CHECK_FMT(2,3) EV_NORETURN;
 EVENT2_EXPORT_SYMBOL

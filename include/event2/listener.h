@@ -138,7 +138,7 @@ struct evconnlistener *evconnlistener_new(struct event_base *base,
    @param base The event base to associate the listener with.
    @param cb A callback to be invoked when a new connection arrives. If the
       callback is NULL, the listener will be treated as disabled until the
-      callback is set.
+      callback is set. wow.
    @param ptr A user-supplied pointer to give to the callback.
    @param flags Any number of LEV_OPT_* flags
    @param backlog Passed to the listen() call to determine the length of the
@@ -146,6 +146,9 @@ struct evconnlistener *evconnlistener_new(struct event_base *base,
    @param addr The address to listen for connections on.
    @param socklen The length of the address.
  */
+/*
+	
+*/
 EVENT2_EXPORT_SYMBOL
 struct evconnlistener *evconnlistener_new_bind(struct event_base *base,
     evconnlistener_cb cb, void *ptr, unsigned flags, int backlog,

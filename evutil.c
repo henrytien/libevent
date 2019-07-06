@@ -2544,6 +2544,9 @@ evutil_load_windows_system_library_(const TCHAR *library_name)
  * to make the socket nonblocking or close-on-exec with as few syscalls as
  * possible.
  */
+/*
+ * wrapper around 'socket' to provide Linux-style. create a socket so cool :)
+ */
 evutil_socket_t
 evutil_socket_(int domain, int type, int protocol)
 {

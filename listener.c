@@ -229,7 +229,9 @@ evconnlistener_new_bind(struct event_base *base, evconnlistener_cb cb,
 
 	if (setsockopt(fd, SOL_SOCKET, SO_KEEPALIVE, (void*)&on, sizeof(on))<0)
 		goto err;
-
+	/*
+	 * here have several flags you can choice, so nice.
+	 */
 	if (flags & LEV_OPT_REUSEABLE) {
 		if (evutil_make_listen_socket_reuseable(fd) < 0)
 			goto err;
