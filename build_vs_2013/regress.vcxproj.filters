@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="D:\Henry\GitHubSource\libevent\test\regress.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Henry\GitHubSource\libevent\test\regress.gen.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Henry\GitHubSource\libevent\test\regress_buffer.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Henry\GitHubSource\libevent\test\regress_bufferevent.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Henry\GitHubSource\libevent\test\regress_dns.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Henry\GitHubSource\libevent\test\regress_et.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Henry\GitHubSource\libevent\test\regress_finalize.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Henry\GitHubSource\libevent\test\regress_http.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Henry\GitHubSource\libevent\test\regress_listener.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Henry\GitHubSource\libevent\test\regress_main.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Henry\GitHubSource\libevent\test\regress_minheap.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Henry\GitHubSource\libevent\test\regress_rpc.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Henry\GitHubSource\libevent\test\regress_testutils.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Henry\GitHubSource\libevent\test\regress_util.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Henry\GitHubSource\libevent\test\regress_watch.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Henry\GitHubSource\libevent\test\tinytest.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Henry\GitHubSource\libevent\test\regress_iocp.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Henry\GitHubSource\libevent\test\regress_thread.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="D:\Henry\GitHubSource\libevent\test\regress.gen.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Henry\GitHubSource\libevent\test\regress_testutils.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\Henry\GitHubSource\libevent\build_vs_2013\CMakeFiles\1180fa80919ef9312d10d128e8482ffc\regress.gen.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\Henry\GitHubSource\libevent\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{0B04BAEA-9162-3B7C-9D98-E076A9050303}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{CE1C146A-6E35-3D85-BB11-D7E0729F01D9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{7704D57C-9273-377E-AB23-FF2CE7FACA61}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

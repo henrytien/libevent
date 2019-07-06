@@ -1,0 +1,250 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{98281117-2C89-34D7-937E-3C07DBF77930}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>Win32</Platform>
+    <ProjectName>ALL_BUILD</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>D:\Henry\GitHubSource\libevent\build_vs_2013\include;D:\Henry\GitHubSource\libevent\include;D:\Henry\GitHubSource\libevent\compat;D:\Henry\GitHubSource\libevent;D:\Henry\GitHubSource\libevent\.\WIN32-Code;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>D:\Henry\GitHubSource\libevent\build_vs_2013\include;D:\Henry\GitHubSource\libevent\include;D:\Henry\GitHubSource\libevent\compat;D:\Henry\GitHubSource\libevent;D:\Henry\GitHubSource\libevent\.\WIN32-Code;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\Henry\GitHubSource\libevent\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Building Custom Rule D:/Henry/GitHubSource/libevent/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/Henry/GitHubSource/libevent -BD:/Henry/GitHubSource/libevent/build_vs_2013 --check-stamp-file D:/Henry/GitHubSource/libevent/build_vs_2013/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">D:/Henry/GitHubSource/libevent/CMakeLists.txt;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeCCompiler.cmake.in;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeCCompilerABI.c;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeCheckCompilerFlagCommonPatterns.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeCompilerIdDetection.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeConfigurableFile.in;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeDetermineCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeDetermineCompileFeatures.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeDetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeDetermineCompilerABI.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeDetermineCompilerId.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeDetermineRCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeDetermineSystem.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeFindBinUtils.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeParseArguments.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeParseImplicitIncludeInfo.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeParseImplicitLinkInfo.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeRCCompiler.cmake.in;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeSystem.cmake.in;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeTestCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeTestCompilerCommon.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeTestRCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CTest.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CTestTargets.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CTestUseLaunchers.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CheckCCompilerFlag.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CheckCSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CheckCXXSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CheckFunctionExists.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CheckIncludeFile.c.in;C:\Program Files\CMake\share\cmake-3.14\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CheckIncludeFileCXX.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CheckIncludeFiles.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CheckStructHasMember.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CheckSymbolExists.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CheckTypeSize.c.in;C:\Program Files\CMake\share\cmake-3.14\Modules\CheckTypeSize.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CheckVariableExists.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\ADSP-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\ARMCC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\AppleClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\Borland-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\Bruce-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\Clang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\Compaq-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\Cray-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\GHS-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\GNU-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\HP-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\IAR-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\Intel-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\MIPSpro-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\MSVC-C-FeatureTests.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\MSVC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\NVIDIA-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\PGI-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\PathScale-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\SCO-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\SDCC-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\SunPro-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\TI-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\TinyCC-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\VisualAge-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\Watcom-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\XL-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\zOS-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CompilerId\VS-10.vcxproj.in;C:\Program Files\CMake\share\cmake-3.14\Modules\DartConfiguration.tcl.in;C:\Program Files\CMake\share\cmake-3.14\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\FindPythonInterp.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\FindZLIB.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Internal\FeatureTesting.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Platform\WindowsPaths.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\SelectLibraryConfigurations.cmake;D:\Henry\GitHubSource\libevent\CMakeLists.txt;D:\Henry\GitHubSource\libevent\build_vs_2013\CMakeFiles\3.14.4\CMakeCCompiler.cmake;D:\Henry\GitHubSource\libevent\build_vs_2013\CMakeFiles\3.14.4\CMakeRCCompiler.cmake;D:\Henry\GitHubSource\libevent\build_vs_2013\CMakeFiles\3.14.4\CMakeSystem.cmake;D:\Henry\GitHubSource\libevent\build_vs_2013\CMakeFiles\CheckIncludeFiles\EVENT__HAVE_IFADDRS_H.c;D:\Henry\GitHubSource\libevent\build_vs_2013\CMakeFiles\CheckTypeSize\EVENT__HAVE_FD_MASK.c;D:\Henry\GitHubSource\libevent\build_vs_2013\CMakeFiles\CheckTypeSize\EVENT__HAVE_SA_FAMILY_T.c;D:\Henry\GitHubSource\libevent\build_vs_2013\CMakeFiles\CheckTypeSize\EVENT__HAVE_STRUCT_ADDRINFO.c;D:\Henry\GitHubSource\libevent\build_vs_2013\CMakeFiles\CheckTypeSize\EVENT__HAVE_STRUCT_IN6_ADDR.c;D:\Henry\GitHubSource\libevent\build_vs_2013\CMakeFiles\CheckTypeSize\EVENT__HAVE_STRUCT_LINGER.c;D:\Henry\GitHubSource\libevent\build_vs_2013\CMakeFiles\CheckTypeSize\EVENT__HAVE_STRUCT_SOCKADDR_IN6.c;D:\Henry\GitHubSource\libevent\build_vs_2013\CMakeFiles\CheckTypeSize\EVENT__HAVE_STRUCT_SOCKADDR_STORAGE.c;D:\Henry\GitHubSource\libevent\build_vs_2013\CMakeFiles\CheckTypeSize\EVENT__HAVE_STRUCT_SOCKADDR_UN.c;D:\Henry\GitHubSource\libevent\build_vs_2013\CMakeFiles\CheckTypeSize\EVENT__HAVE_UINT16_T.c;D:\Henry\GitHubSource\libevent\build_vs_2013\CMakeFiles\CheckTypeSize\EVENT__HAVE_UINT32_T.c;D:\Henry\GitHubSource\libevent\build_vs_2013\CMakeFiles\CheckTypeSize\EVENT__HAVE_UINT64_T.c;D:\Henry\GitHubSource\libevent\build_vs_2013\CMakeFiles\CheckTypeSize\EVENT__HAVE_UINT8_T.c;D:\Henry\GitHubSource\libevent\build_vs_2013\CMakeFiles\CheckTypeSize\EVENT__HAVE_UINTPTR_T.c;D:\Henry\GitHubSource\libevent\build_vs_2013\CMakeFiles\CheckTypeSize\EVENT__SIZEOF_INT.c;D:\Henry\GitHubSource\libevent\build_vs_2013\CMakeFiles\CheckTypeSize\EVENT__SIZEOF_LONG.c;D:\Henry\GitHubSource\libevent\build_vs_2013\CMakeFiles\CheckTypeSize\EVENT__SIZEOF_LONG_LONG.c;D:\Henry\GitHubSource\libevent\build_vs_2013\CMakeFiles\CheckTypeSize\EVENT__SIZEOF_OFF_T.c;D:\Henry\GitHubSource\libevent\build_vs_2013\CMakeFiles\CheckTypeSize\EVENT__SIZEOF_PID_T.c;D:\Henry\GitHubSource\libevent\build_vs_2013\CMakeFiles\CheckTypeSize\EVENT__SIZEOF_PTHREAD_T.c;D:\Henry\GitHubSource\libevent\build_vs_2013\CMakeFiles\CheckTypeSize\EVENT__SIZEOF_SHORT.c;D:\Henry\GitHubSource\libevent\build_vs_2013\CMakeFiles\CheckTypeSize\EVENT__SIZEOF_SIZE_T.c;D:\Henry\GitHubSource\libevent\build_vs_2013\CMakeFiles\CheckTypeSize\EVENT__SIZEOF_SOCKLEN_T.c;D:\Henry\GitHubSource\libevent\build_vs_2013\CMakeFiles\CheckTypeSize\EVENT__SIZEOF_SSIZE_T_LOWER.c;D:\Henry\GitHubSource\libevent\build_vs_2013\CMakeFiles\CheckTypeSize\EVENT__SIZEOF_SSIZE_T_UPPER.c;D:\Henry\GitHubSource\libevent\build_vs_2013\CMakeFiles\CheckTypeSize\EVENT__SIZEOF_TIME_T.c;D:\Henry\GitHubSource\libevent\build_vs_2013\CMakeFiles\CheckTypeSize\EVENT__SIZEOF_UNSIGNED.c;D:\Henry\GitHubSource\libevent\build_vs_2013\CMakeFiles\CheckTypeSize\EVENT__SIZEOF_UNSIGNED_INT.c;D:\Henry\GitHubSource\libevent\build_vs_2013\CMakeFiles\CheckTypeSize\EVENT__SIZEOF_VOID_P.c;D:\Henry\GitHubSource\libevent\build_vs_2013\CMakeFiles\feature_tests.c;D:\Henry\GitHubSource\libevent\cmake\AddCompilerFlags.cmake;D:\Henry\GitHubSource\libevent\cmake\AddEventLibrary.cmake;D:\Henry\GitHubSource\libevent\cmake\CheckConstExists.cmake;D:\Henry\GitHubSource\libevent\cmake\CheckFileOffsetBits.cmake;D:\Henry\GitHubSource\libevent\cmake\CheckFunctionExistsEx.c;D:\Henry\GitHubSource\libevent\cmake\CheckFunctionExistsEx.cmake;D:\Henry\GitHubSource\libevent\cmake\CheckFunctionKeywords.cmake;D:\Henry\GitHubSource\libevent\cmake\CheckPrototypeDefinition.cmake;D:\Henry\GitHubSource\libevent\cmake\FindGit.cmake;D:\Henry\GitHubSource\libevent\cmake\LibeventConfig.cmake.in;D:\Henry\GitHubSource\libevent\cmake\LibeventConfigBuildTree.cmake.in;D:\Henry\GitHubSource\libevent\cmake\LibeventConfigVersion.cmake.in;D:\Henry\GitHubSource\libevent\cmake\Uninstall.cmake.in;D:\Henry\GitHubSource\libevent\cmake\VersionViaGit.cmake;D:\Henry\GitHubSource\libevent\evconfig-private.h.cmake;D:\Henry\GitHubSource\libevent\event-config.h.cmake;D:\Henry\GitHubSource\libevent\libevent.pc.in;D:\Henry\GitHubSource\libevent\libevent_core.pc.in;D:\Henry\GitHubSource\libevent\libevent_extra.pc.in;D:\Henry\GitHubSource\libevent\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">D:\Henry\GitHubSource\libevent\build_vs_2013\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Building Custom Rule D:/Henry/GitHubSource/libevent/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/Henry/GitHubSource/libevent -BD:/Henry/GitHubSource/libevent/build_vs_2013 --check-stamp-file D:/Henry/GitHubSource/libevent/build_vs_2013/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">D:/Henry/GitHubSource/libevent/CMakeLists.txt;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeCCompiler.cmake.in;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeCCompilerABI.c;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeCheckCompilerFlagCommonPatterns.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeCompilerIdDetection.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeConfigurableFile.in;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeDetermineCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeDetermineCompileFeatures.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeDetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeDetermineCompilerABI.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeDetermineCompilerId.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeDetermineRCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeDetermineSystem.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeFindBinUtils.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeParseArguments.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeParseImplicitIncludeInfo.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeParseImplicitLinkInfo.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeRCCompiler.cmake.in;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeSystem.cmake.in;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeTestCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeTestCompilerCommon.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeTestRCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CTest.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CTestTargets.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CTestUseLaunchers.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CheckCCompilerFlag.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CheckCSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CheckCXXSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CheckFunctionExists.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CheckIncludeFile.c.in;C:\Program Files\CMake\share\cmake-3.14\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CheckIncludeFileCXX.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CheckIncludeFiles.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CheckStructHasMember.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CheckSymbolExists.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CheckTypeSize.c.in;C:\Program Files\CMake\share\cmake-3.14\Modules\CheckTypeSize.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CheckVariableExists.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\ADSP-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\ARMCC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\AppleClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\Borland-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\Bruce-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\Clang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\Compaq-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\Cray-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\GHS-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\GNU-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\HP-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\IAR-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\Intel-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\MIPSpro-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\MSVC-C-FeatureTests.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\MSVC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\NVIDIA-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\PGI-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\PathScale-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\SCO-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\SDCC-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\SunPro-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\TI-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\TinyCC-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\VisualAge-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\Watcom-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\XL-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\zOS-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CompilerId\VS-10.vcxproj.in;C:\Program Files\CMake\share\cmake-3.14\Modules\DartConfiguration.tcl.in;C:\Program Files\CMake\share\cmake-3.14\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\FindPythonInterp.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\FindZLIB.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Internal\FeatureTesting.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Platform\WindowsPaths.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\SelectLibraryConfigurations.cmake;D:\Henry\GitHubSource\libevent\CMakeLists.txt;D:\Henry\GitHubSource\libevent\build_vs_2013\CMakeFiles\3.14.4\CMakeCCompiler.cmake;D:\Henry\GitHubSource\libevent\build_vs_2013\CMakeFiles\3.14.4\CMakeRCCompiler.cmake;D:\Henry\GitHubSource\libevent\build_vs_2013\CMakeFiles\3.14.4\CMakeSystem.cmake;D:\Henry\GitHubSource\libevent\build_vs_2013\CMakeFiles\CheckIncludeFiles\EVENT__HAVE_IFADDRS_H.c;D:\Henry\GitHubSource\libevent\build_vs_2013\CMakeFiles\CheckTypeSize\EVENT__HAVE_FD_MASK.c;D:\Henry\GitHubSource\libevent\build_vs_2013\CMakeFiles\CheckTypeSize\EVENT__HAVE_SA_FAMILY_T.c;D:\Henry\GitHubSource\libevent\build_vs_2013\CMakeFiles\CheckTypeSize\EVENT__HAVE_STRUCT_ADDRINFO.c;D:\Henry\GitHubSource\libevent\build_vs_2013\CMakeFiles\CheckTypeSize\EVENT__HAVE_STRUCT_IN6_ADDR.c;D:\Henry\GitHubSource\libevent\build_vs_2013\CMakeFiles\CheckTypeSize\EVENT__HAVE_STRUCT_LINGER.c;D:\Henry\GitHubSource\libevent\build_vs_2013\CMakeFiles\CheckTypeSize\EVENT__HAVE_STRUCT_SOCKADDR_IN6.c;D:\Henry\GitHubSource\libevent\build_vs_2013\CMakeFiles\CheckTypeSize\EVENT__HAVE_STRUCT_SOCKADDR_STORAGE.c;D:\Henry\GitHubSource\libevent\build_vs_2013\CMakeFiles\CheckTypeSize\EVENT__HAVE_STRUCT_SOCKADDR_UN.c;D:\Henry\GitHubSource\libevent\build_vs_2013\CMakeFiles\CheckTypeSize\EVENT__HAVE_UINT16_T.c;D:\Henry\GitHubSource\libevent\build_vs_2013\CMakeFiles\CheckTypeSize\EVENT__HAVE_UINT32_T.c;D:\Henry\GitHubSource\libevent\build_vs_2013\CMakeFiles\CheckTypeSize\EVENT__HAVE_UINT64_T.c;D:\Henry\GitHubSource\libevent\build_vs_2013\CMakeFiles\CheckTypeSize\EVENT__HAVE_UINT8_T.c;D:\Henry\GitHubSource\libevent\build_vs_2013\CMakeFiles\CheckTypeSize\EVENT__HAVE_UINTPTR_T.c;D:\Henry\GitHubSource\libevent\build_vs_2013\CMakeFiles\CheckTypeSize\EVENT__SIZEOF_INT.c;D:\Henry\GitHubSource\libevent\build_vs_2013\CMakeFiles\CheckTypeSize\EVENT__SIZEOF_LONG.c;D:\Henry\GitHubSource\libevent\build_vs_2013\CMakeFiles\CheckTypeSize\EVENT__SIZEOF_LONG_LONG.c;D:\Henry\GitHubSource\libevent\build_vs_2013\CMakeFiles\CheckTypeSize\EVENT__SIZEOF_OFF_T.c;D:\Henry\GitHubSource\libevent\build_vs_2013\CMakeFiles\CheckTypeSize\EVENT__SIZEOF_PID_T.c;D:\Henry\GitHubSource\libevent\build_vs_2013\CMakeFiles\CheckTypeSize\EVENT__SIZEOF_PTHREAD_T.c;D:\Henry\GitHubSource\libevent\build_vs_2013\CMakeFiles\CheckTypeSize\EVENT__SIZEOF_SHORT.c;D:\Henry\GitHubSource\libevent\build_vs_2013\CMakeFiles\CheckTypeSize\EVENT__SIZEOF_SIZE_T.c;D:\Henry\GitHubSource\libevent\build_vs_2013\CMakeFiles\CheckTypeSize\EVENT__SIZEOF_SOCKLEN_T.c;D:\Henry\GitHubSource\libevent\build_vs_2013\CMakeFiles\CheckTypeSize\EVENT__SIZEOF_SSIZE_T_LOWER.c;D:\Henry\GitHubSource\libevent\build_vs_2013\CMakeFiles\CheckTypeSize\EVENT__SIZEOF_SSIZE_T_UPPER.c;D:\Henry\GitHubSource\libevent\build_vs_2013\CMakeFiles\CheckTypeSize\EVENT__SIZEOF_TIME_T.c;D:\Henry\GitHubSource\libevent\build_vs_2013\CMakeFiles\CheckTypeSize\EVENT__SIZEOF_UNSIGNED.c;D:\Henry\GitHubSource\libevent\build_vs_2013\CMakeFiles\CheckTypeSize\EVENT__SIZEOF_UNSIGNED_INT.c;D:\Henry\GitHubSource\libevent\build_vs_2013\CMakeFiles\CheckTypeSize\EVENT__SIZEOF_VOID_P.c;D:\Henry\GitHubSource\libevent\build_vs_2013\CMakeFiles\feature_tests.c;D:\Henry\GitHubSource\libevent\cmake\AddCompilerFlags.cmake;D:\Henry\GitHubSource\libevent\cmake\AddEventLibrary.cmake;D:\Henry\GitHubSource\libevent\cmake\CheckConstExists.cmake;D:\Henry\GitHubSource\libevent\cmake\CheckFileOffsetBits.cmake;D:\Henry\GitHubSource\libevent\cmake\CheckFunctionExistsEx.c;D:\Henry\GitHubSource\libevent\cmake\CheckFunctionExistsEx.cmake;D:\Henry\GitHubSource\libevent\cmake\CheckFunctionKeywords.cmake;D:\Henry\GitHubSource\libevent\cmake\CheckPrototypeDefinition.cmake;D:\Henry\GitHubSource\libevent\cmake\FindGit.cmake;D:\Henry\GitHubSource\libevent\cmake\LibeventConfig.cmake.in;D:\Henry\GitHubSource\libevent\cmake\LibeventConfigBuildTree.cmake.in;D:\Henry\GitHubSource\libevent\cmake\LibeventConfigVersion.cmake.in;D:\Henry\GitHubSource\libevent\cmake\Uninstall.cmake.in;D:\Henry\GitHubSource\libevent\cmake\VersionViaGit.cmake;D:\Henry\GitHubSource\libevent\evconfig-private.h.cmake;D:\Henry\GitHubSource\libevent\event-config.h.cmake;D:\Henry\GitHubSource\libevent\libevent.pc.in;D:\Henry\GitHubSource\libevent\libevent_core.pc.in;D:\Henry\GitHubSource\libevent\libevent_extra.pc.in;D:\Henry\GitHubSource\libevent\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">D:\Henry\GitHubSource\libevent\build_vs_2013\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="D:\Henry\GitHubSource\libevent\build_vs_2013\ZERO_CHECK.vcxproj">
+      <Project>{8016A145-8283-3D1A-9641-354DA726B948}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\Henry\GitHubSource\libevent\build_vs_2013\bench.vcxproj">
+      <Project>{B8A15D6C-486F-3AEA-B425-BE6EC1D83FC6}</Project>
+      <Name>bench</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\Henry\GitHubSource\libevent\build_vs_2013\bench_cascade.vcxproj">
+      <Project>{00160730-F1E3-3235-B4D1-EE66131A8A9B}</Project>
+      <Name>bench_cascade</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\Henry\GitHubSource\libevent\build_vs_2013\bench_http.vcxproj">
+      <Project>{8B633383-9DAA-3A4A-97A2-AEA278F33A26}</Project>
+      <Name>bench_http</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\Henry\GitHubSource\libevent\build_vs_2013\bench_httpclient.vcxproj">
+      <Project>{A1BEA56D-2861-30B4-8982-0706174ED953}</Project>
+      <Name>bench_httpclient</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\Henry\GitHubSource\libevent\build_vs_2013\dns-example.vcxproj">
+      <Project>{FC62FB24-D55F-3B29-9E3B-70A78F3C4C63}</Project>
+      <Name>dns-example</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\Henry\GitHubSource\libevent\build_vs_2013\event-read-fifo.vcxproj">
+      <Project>{86A1B49D-6A61-3B6D-8E7B-CB6C968D5F9C}</Project>
+      <Name>event-read-fifo</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\Henry\GitHubSource\libevent\build_vs_2013\event_core_shared.vcxproj">
+      <Project>{FB771B72-BA6F-3C4B-BAA9-C3A6D2A30DA8}</Project>
+      <Name>event_core_shared</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\Henry\GitHubSource\libevent\build_vs_2013\event_extra_shared.vcxproj">
+      <Project>{00458991-5030-3256-A8A5-0B2CBB64818B}</Project>
+      <Name>event_extra_shared</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\Henry\GitHubSource\libevent\build_vs_2013\event_shared.vcxproj">
+      <Project>{8BD4F55E-F1B1-30E8-A326-941388498D62}</Project>
+      <Name>event_shared</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\Henry\GitHubSource\libevent\build_vs_2013\hello-world.vcxproj">
+      <Project>{6D00A6C8-ED83-379D-B07C-143A1893C163}</Project>
+      <Name>hello-world</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\Henry\GitHubSource\libevent\build_vs_2013\http-connect.vcxproj">
+      <Project>{D5B660F7-A97A-3FB1-8976-86F0C63CEBDB}</Project>
+      <Name>http-connect</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\Henry\GitHubSource\libevent\build_vs_2013\http-server.vcxproj">
+      <Project>{82B3A7AB-D1B2-3477-930F-C53E46D265FA}</Project>
+      <Name>http-server</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\Henry\GitHubSource\libevent\build_vs_2013\regress.vcxproj">
+      <Project>{58A81DD6-558B-325C-9B5D-35FD57825DB5}</Project>
+      <Name>regress</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\Henry\GitHubSource\libevent\build_vs_2013\signal-test.vcxproj">
+      <Project>{78587F11-E4A1-3B33-B52F-90BFAA6E71CE}</Project>
+      <Name>signal-test</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\Henry\GitHubSource\libevent\build_vs_2013\test-changelist.vcxproj">
+      <Project>{E8109CF0-40D3-3FF8-A4FB-66CE7762F10E}</Project>
+      <Name>test-changelist</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\Henry\GitHubSource\libevent\build_vs_2013\test-dumpevents.vcxproj">
+      <Project>{D6D2B982-253F-3E54-BD1F-5A168360CD1A}</Project>
+      <Name>test-dumpevents</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\Henry\GitHubSource\libevent\build_vs_2013\test-eof.vcxproj">
+      <Project>{7CF54AD5-A822-336D-B70A-6657CDC83DD3}</Project>
+      <Name>test-eof</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\Henry\GitHubSource\libevent\build_vs_2013\test-fdleak.vcxproj">
+      <Project>{C7C50534-2791-3355-B25A-1ECD4F4851C1}</Project>
+      <Name>test-fdleak</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\Henry\GitHubSource\libevent\build_vs_2013\test-init.vcxproj">
+      <Project>{8F47BD17-8815-3785-97DC-C581C80D74D3}</Project>
+      <Name>test-init</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\Henry\GitHubSource\libevent\build_vs_2013\test-ratelim.vcxproj">
+      <Project>{520B86EC-931C-3AB2-BB44-C60F64909BED}</Project>
+      <Name>test-ratelim</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\Henry\GitHubSource\libevent\build_vs_2013\test-time.vcxproj">
+      <Project>{A17C2C22-9D24-32F6-BA15-75C9BA5E5EC0}</Project>
+      <Name>test-time</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\Henry\GitHubSource\libevent\build_vs_2013\test-weof.vcxproj">
+      <Project>{6D52BD56-B47D-37CB-8022-2772F84A2AFD}</Project>
+      <Name>test-weof</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\Henry\GitHubSource\libevent\build_vs_2013\time-test.vcxproj">
+      <Project>{67015408-1EF2-39CF-A580-0E13E9A2AF05}</Project>
+      <Name>time-test</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\Henry\GitHubSource\libevent\build_vs_2013\watch-timing.vcxproj">
+      <Project>{6C7D407E-163A-3B99-A350-59A19360B46D}</Project>
+      <Name>watch-timing</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

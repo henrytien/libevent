@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="D:\Henry\GitHubSource\libevent\event_tagging.c">
+      <Filter>Source Extra</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Henry\GitHubSource\libevent\http.c">
+      <Filter>Source Extra</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Henry\GitHubSource\libevent\evdns.c">
+      <Filter>Source Extra</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Henry\GitHubSource\libevent\evrpc.c">
+      <Filter>Source Extra</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\Henry\GitHubSource\libevent\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Extra">
+      <UniqueIdentifier>{28649CD5-3115-3685-9E05-8E8145D39449}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

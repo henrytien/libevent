@@ -1,0 +1,94 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="D:\Henry\GitHubSource\libevent\buffer.c">
+      <Filter>Source Core</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Henry\GitHubSource\libevent\bufferevent.c">
+      <Filter>Source Core</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Henry\GitHubSource\libevent\bufferevent_filter.c">
+      <Filter>Source Core</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Henry\GitHubSource\libevent\bufferevent_pair.c">
+      <Filter>Source Core</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Henry\GitHubSource\libevent\bufferevent_ratelim.c">
+      <Filter>Source Core</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Henry\GitHubSource\libevent\bufferevent_sock.c">
+      <Filter>Source Core</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Henry\GitHubSource\libevent\event.c">
+      <Filter>Source Core</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Henry\GitHubSource\libevent\evmap.c">
+      <Filter>Source Core</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Henry\GitHubSource\libevent\evthread.c">
+      <Filter>Source Core</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Henry\GitHubSource\libevent\evutil.c">
+      <Filter>Source Core</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Henry\GitHubSource\libevent\evutil_rand.c">
+      <Filter>Source Core</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Henry\GitHubSource\libevent\evutil_time.c">
+      <Filter>Source Core</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Henry\GitHubSource\libevent\watch.c">
+      <Filter>Source Core</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Henry\GitHubSource\libevent\listener.c">
+      <Filter>Source Core</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Henry\GitHubSource\libevent\log.c">
+      <Filter>Source Core</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Henry\GitHubSource\libevent\signal.c">
+      <Filter>Source Core</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Henry\GitHubSource\libevent\strlcpy.c">
+      <Filter>Source Core</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Henry\GitHubSource\libevent\evthread_win32.c">
+      <Filter>Source Core</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Henry\GitHubSource\libevent\buffer_iocp.c">
+      <Filter>Source Core</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Henry\GitHubSource\libevent\bufferevent_async.c">
+      <Filter>Source Core</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Henry\GitHubSource\libevent\event_iocp.c">
+      <Filter>Source Core</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Henry\GitHubSource\libevent\win32select.c">
+      <Filter>Source Core</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Henry\GitHubSource\libevent\event_tagging.c">
+      <Filter>Source Extra</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Henry\GitHubSource\libevent\http.c">
+      <Filter>Source Extra</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Henry\GitHubSource\libevent\evdns.c">
+      <Filter>Source Extra</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Henry\GitHubSource\libevent\evrpc.c">
+      <Filter>Source Extra</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\Henry\GitHubSource\libevent\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Core">
+      <UniqueIdentifier>{02A5AF8B-C8A3-3679-B4E5-008EFF0D2C12}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Extra">
+      <UniqueIdentifier>{28649CD5-3115-3685-9E05-8E8145D39449}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
