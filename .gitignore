@@ -139,9 +139,9 @@ verify_tests.bat
 event.dir
 event_core.dir
 event_extra.dir
-*.vcxproj
-*.sln
-*.filters
+#*.vcxproj
+#*.sln
+#*.filters
 install_manifest.txt
 
 # ninja
@@ -156,3 +156,7 @@ rules.ninja
 /*.tar.gz
 
 /.vagrant
+
+# all logs
+**/Debug
+*.tlog
